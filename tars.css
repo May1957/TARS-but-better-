@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+
+ 
+  background-image: url('https://home.cern/wp-content/uploads/2026/04/CDS-CERN-HOMEWEB-PHO-2022-188-1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+
+.mascot-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.tars {
+  display: block;
+  width: 260px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.bubble {
+  background: #fff;
+  border: 5px solid #e0d8cc;
+  border-radius: 18px;
+  padding: 1rem 1.25rem;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -24px; 
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 16px solid #e0d8cc;
+}
+
+.bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 14px solid #fff;
+  z-index: 3;
+}
+
+#fact-text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #3a3228;
+}
+
+
+.btn {
+  padding: 12px 36px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 600;
+  background: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, top 0.2s ease, left 0.2s ease;
+  position: fixed;
+  z-index:10;
+}
+
+
+.silly-tars {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  z-index: 20;
+ } 
+
+.tars-img {
+  width: 80px;
+  display: block;
+}
+
+.tars-corner {
+  background: #a894f0;
+  border: 3px solid #0c202e;
+  border-radius: 14px;
+  padding: 0.6rem 0.8rem;
+  max-width: 160px;
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #000000
+}
+
+
+
